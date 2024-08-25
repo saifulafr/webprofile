@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Personal Website</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+	<style type="text/css">
+	*{
+		margin: 0;
+		box-sizing: border-box;
+		font-family: 'lato', sans-serif;
+		padding: 0;
+	}	
+	body{
+		background-color: #ffffff;
+	}
+	.header{
+		max-width: 900px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		padding-top:20px ;
+		padding-bottom: 20px;
+
+	}
+	.header-container{
+		background-color: #5F0BB8;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		border: 0;
+		border-radius: 10px;
+		padding: 10px 20px 10px 20px;
+
+	}
+	.site-logo{
+		display: flex;
+		justify-content: star;
+		align-items: center;
+		color: #FFD700;
+		width: 50%;
+	}
+	.site-logo h1{
+		text-transform: uppercase;
+		font-size: 25px;
+	}
+	.navbar{
+		display: flex;
+		justify-content: flex-end;
+		align-items: start;
+		width: 50%;
+	}
+	.nav-menu{
+		display: flex;
+		justify-content: center;
+		list-style: none;
+	}
+	.nav-menu li a{
+		color: white;
+		padding: 10px;
+		text-decoration: none;
+		cursor: pointer;
+		border: 2px solid #5F0BB8;
+	}
+	.nav-menu li a:hover{
+		border-bottom: 2px solid white;
+	}
+	.hero{
+		display: flex;
+		box-sizing: border-box;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		padding-bottom: 50px;
+	}
+	.hero-container{
+		background-color: #5F0BB8;
+		background-image: radial-gradient(rgba(172, 132, 216, 0.9933), rgba(93, 13, 179, 0.67)) ;
+		width: 900px;
+		border: 0;
+		border-radius: 10px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
+		padding: 0;
+		box-shadow: 0px 185px 111px 0px rgba(0, 0, 0, 0.03);
+		box-shadow: 20px 513px 143px 0px rgba(0, 0, 0, 0.03);
+	}
+	.title{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-top: 30px;
+	}
+	.nama{
+		padding: 20px;
+	}
+	.nama h1{
+		color:white;
+		font-size: 50px;
+	}
+	.social-icon{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		list-style: none;
+		gap: 20px;
+	}
+	.social-icon li{
+		position: relative;
+		transition: all .3s ease-in-out;
+	}
+	.social-icon li a{
+		font-size: 15px;
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+		padding: 5px;
+	}
+	.social-icon li:hover{
+		transform:scale(1.2);
+		}
+	.img-hero{
+		padding-top:20px;
+		padding-bottom:0;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		flex-direction: column;
+
+	}
+	.img-hero img{
+		max-width: 400px;
+		width: 100%;
+		position: relative;
+	}
+	.img-hero h1{
+		position: absolute;
+		font-size: 90px;
+		margin-bottom: 200px;
+		text-transform: uppercase;
+		color: rgba(255, 255, 255, 0.44);
+		font-family: 'Lexend', sans-serif;
+		font-weight: 900;
+	}
+	.services-title{
+		width: 100%;
+		max-width: 900px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		margin: 0 auto;
+		row-gap: 20px;
+	}
+	.services-title h2{
+		color: #2B2B2;
+		font-weight: 700;
+	}
+	.services-title p{
+		color: gray;
+		font-weight: 400;
+	}
+	.service-detail{
+		display: flex;
+		max-width: 900px;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+		margin: 0 auto;
+		padding-bottom: 50px;
+	}
+	.service-tengah{
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		row-gap: 10px;
+		background-color: #6E0FD4;
+		border: 0;
+		border-radius: 16px;
+		box-shadow: 0px 0px 34px 16px rgba(0, 0, 0, 0.14);
+	}
+	.service-samping{
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		row-gap: 10px;
+	}
+	.service-tengah h2{
+		color: #EDDEFD;
+		font-weight: 700;
+	}
+	.service-tengah p{
+		color: #B3B3B3;
+		font-weight: 500;
+		text-align: center;
+	}
+	.service-samping h2{
+		color: #4A4A4A;
+		font-weight: 700;
+	}
+	.service-samping p{
+		color: #8E8E8E;
+		font-weight: 500;
+		text-align: center;
+	}
+	.about{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		width: 100%; /* Membuat .about lebar penuh */
+    max-width: 900px; /* Maksimal lebar 900px */
+		background-color: #6E0FD4;
+		padding: 30px;
+		border-radius: 20px;
+	}
+	.aboutme{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: white;
+		margin: 0 auto;
+		padding: 0;
+		border:0;
+		border-radius:20px;
+	}
+	.aboutme-title{
+		padding: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		row-gap: 20px;
+	}
+	.aboutme-detail{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 0px 20px 0px 20px;
+	}
+	.aboutme-detail .img{
+		padding-top: 50px;
+		position: relative;
+	}
+	.aboutme-detail .img img{
+		width: 300px;
+		padding: 0;
+	}
+	.aboutme-detail .profile{
+		padding-right: 40px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		row-gap: 20px;
+	}
+	.aboutme-detail .profile p{
+		line-height: 1.5;
+		text-align: justify;
+		color: #959595;
+	}
+	.aboutme-detail .profile button{
+		background-color: #6E0FD4;
+		color: white;
+		width: 187px;
+		height: 40px;
+		border-radius: 8px;
+	}
+	.skills{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+		grid-gap: 10px;
+		padding-top: 30px;
+		width: 100%;
+
+	}
+	.skill-detail{
+		background-color: white;
+		border-radius: 16px;
+		text-align: center;
+		padding: 10px;
+
+	}
+	.skill-detail img{
+		display: block;
+		margin: 0;
+		width: 100%;
+		max-width: 150px;
+		padding-bottom: 15px;
+	}
+	@media (max-width: 600px){
+		.service-detail{
+			flex-direction: column;
+		}
+		.services-title p{
+		text-align: center;
+	}
+	.aboutme-detail{
+		flex-direction: column;
+		padding-bottom: 30px;
+	}
+	}
+	</style>
+</head>
+<body>
+<header class="header">
+	<div class="header-container">
+	<div class="site-logo">
+		<h1>Logo</h1>
+	</div>
+	<nav class="navbar">
+		<div class="nav-container">
+		<ul class="nav-menu">
+			<li><a href="">Home</a></li>
+			<li><a href="">Home</a></li>
+			<li><a href="">Home</a></li>
+			<li><a href="">Home</a></li>
+		</ul>
+	</div>
+	</nav>
+</div>
+</header>
+<!-- start hero  -->
+<div class="hero">
+	<div class="hero-container">
+<div class="title">
+	<div class="nama">
+	<h1>HI I'M <span style="color:#FFD700;">Saiful Afrirudin</span></h1>
+	</div>
+	<ul class="social-icon">
+		<li><a href="">Instagram</a></li>
+		<li><a href="">Facebook</a></li>
+		<li><a href="">Whatsapp</a></li>
+	</ul>
+</div>
+<div class="img-hero">
+	<h1>Seo Specialist</h1>
+	<img src="img/foto-hero.png"/>
+</div>
+</div>
+</div>
+<!-- end hero -->
+<!-- start services -->
+<div class="services-title">
+	<h1>Services</h1>
+	<p>Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam</p>
+</div>
+<!-- end services title -->
+<div class="service-detail">
+	<div class="service-samping">
+		<img src="img/icon1.png">
+		<h2>Landing Page</h2>
+		<p>Lorem ipsum dolor sit amet . Imperdiet Lorem ipsum dolor sit amet consectetur</p>
+	</div>
+	<div class="service-tengah">
+		<img src="img/icon2.png">
+		<h2>Landing Page</h2>
+		<p>Lorem ipsum dolor sit amet . Imperdiet Lorem ipsum dolor sit amet consectetur</p>
+	</div>
+	<div class="service-samping">
+		<img src="img/icon3.png">
+		<h2>Landing Page</h2>
+		<p>Lorem ipsum dolor sit amet . Imperdiet Lorem ipsum dolor sit amet consectetur</p>
+	</div>
+</div> 
+<!-- close div service-detail -->
+<div class="about">
+	<div class="aboutme">
+		<div class="aboutme-title">
+			<h1>About Me</h1>
+			<p>Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam</p>
+		</div>
+		<div class="aboutme-detail">
+			<div class="aboutme-detail img">
+				<img src="img/foto-hero.png"/>
+			</div>
+			<div class="aboutme-detail profile">
+				<p>A software engineer, the modern-day architect of digital realms, navigates the ethereal landscapes of code, sculpting intangible structures that shape our technological world. With fingers poised over keyboards like virtuoso pianists, they compose symphonies of logic, their minds a labyrinth of algorithms and solutions.Their canvas is a screen, a vast expanse where lines of code dance in intricate patterns, weaving the fabric of programs and applications. Each keystroke is a brushstroke, crafting intricate architectures and breathing life into innovative designs.In this digital atelier.</p>
+				<button>Download CV</button>
+			</div>
+		</div>
+	</div>
+	<div class="skills">
+		<div class="skill-detail">
+			<img src="img/skills100.png">
+			<h3>Figma</h3>		
+		</div>
+		<div class="skill-detail">
+			<img src="img/skills100.png">
+			<h3>Figma</h3>		
+		</div>
+		<div class="skill-detail">
+			<img src="img/skills100.png">
+			<h3>Figma</h3>		
+		</div>
+		<div class="skill-detail">
+			<img src="img/skills100.png">
+			<h3>Figma</h3>		
+		</div>
+		<div class="skill-detail">
+			<img src="img/skills100.png">
+			<h3>Figma</h3>		
+		</div>
+	</div>	
+</div>
+<div style="padding-top:50px;padding-bottom: 30px;">
+	<center><p>Created By Saiful Afrirudin</p></center>
+</div>
+</body>
+</html>

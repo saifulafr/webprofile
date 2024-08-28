@@ -299,6 +299,14 @@
 		max-width: 150px;
 		padding-bottom: 15px;
 	}
+	.hamburger-menu{
+		display: none;
+		cursor: pointer;
+	}
+	.hamburger-menu i{
+		font-size: 30px;
+		color: white;
+	}
 	@media (max-width: 600px){
 	.service-detail{
 			flex-direction: column;
@@ -318,5 +326,32 @@
 		}
 		.nama h1{
 			text-align: center;
+		}
+		.nav-menu{
+			display: none;
+			flex-direction: column;
+	    	width: 100%;
+	    background-color: #333;
+	    position: absolute;
+	    top: 60px;
+	    left: 0;
+		}
+		.hamburger-menu{
+			display: block;
+		}
+		.nav-menu.active{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			max-height: 200px;
+			height: 100%;
+		}
+		.nav-menu.active li{
+			padding: 20px;
+			color: white;
+			cursor: pointer;
+		}
+		.nav-menu.active li a{
+			border: 0;
 		}
 	}

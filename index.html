@@ -11,6 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <header class="header">
@@ -26,6 +27,9 @@
 			<li><a href="">Service</a></li>
 			<li><a href="">Kontak</a></li>
 		</ul>
+		<div class="hamburger-menu">
+			<i class="fa fa-bars"></i>
+		</div>
 	</div>
 	</nav>
 </div>
@@ -121,5 +125,13 @@
 	<p>Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam</p>
 </div>
 <div class="tab-container">
+	<script type="text/javascript">
+		const hamburger = document.querySelector('.hamburger-menu');
+const navLinks = document.querySelector('.nav-menu');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+	</script>
 </body>
 </html>
